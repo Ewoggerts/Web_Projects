@@ -1,0 +1,83 @@
+ <!--
+Ethan Wong
+Pd 5-6 even
+Senior 83 even
+10/1/21
+Reflection prompts: What went well, what didn't go as intended? Was there a new thing you learned here or you mostly practiced already known skills? Give 1-2 examples with what sticks to you the most from Level 1 classwork and project.
+
+It was pretty easy to make the html code with the website teaching the basic lines of code to make buttons and to be able to display information taken in by the user clicking the buttons. 
+
+The only main hiccups was the repetitiveness of the code. I had to repeat and copy my code 3 times to have appetizers,entrees,and dessert. It led to errors. 
+
+There wasn’t much that was new. It was basic java combined with html being a GUI displaying the effects of our code. The thing that stuck to me the most was using Id elements in order to display continuously updating information.
+
+I also didn’t realize how much of the site is offline versus online. The page doesn’t have to constantly be refreshing to a server, it could just be running html scripts already embedded into the code.
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="script.js"></script>
+<h1>Calorie Counter</h1>
+  <b>Total Calories:</b>
+  <div id="total"></div>
+	<b>Appetizer Total Calories:</b>
+    <div id="acal"></div>
+    <b>Appetizer Total Fats:</b>
+    <div id="afat"></div>
+    <b>Appetizer Total Carbs:</b>
+    <div id="acarb"></div>
+    <b>Appetizer Total Protein:</b>
+    <div id="apro"></div>
+    <body onload="start();">
+    <button onclick="fatA();">+FAT</button>
+    <button onclick="mfatA();">-FAT</button>
+    <button onclick="carbA();">+CARB</button>
+    <button onclick="mcarbA();">-CARB</button>
+    <button onclick="proA();">+PROTEIN</button>
+    <button onclick="mproA();">-PROTEIN</button>
+    <br/>
+    <br/>
+  <b>Entree Total Calories:</b>
+    <div id="ecal"></div>
+    <b>Entree Total Fats:</b>
+    <div id="efat"></div>
+    <b>Entree Total Carbs:</b>
+    <div id="ecarb"></div>
+    <b>Entree Total Protein:</b>
+    <div id="epro"></div>
+    <button onclick="fatE();">+FAT</button>
+    <button onclick="mfatE();">-FAT</button>
+    <button onclick="carbE();">+CARB</button>
+    <button onclick="mcarbE();">-CARB</button>
+    <button onclick="proE();">+PROTEIN</button>
+    <button onclick="mproE();">-PROTEIN</button>
+    <br/>
+    <br/>
+  <b>Dessert Total Calories:</b>
+    <div id="dcal"></div>
+    <b>Dessert Total Fats:</b>
+    <div id="dfat"></div>
+    <b>Dessert Total Carbs:</b>
+    <div id="dcarb"></div>
+    <b>Dessert Total Protein:</b>
+    <div id="dpro"></div>
+    <button onclick="fatD();">+FAT</button>
+    <button onclick="mfatD();">-FAT</button>
+    <button onclick="carbD();">+CARB</button>
+    <button onclick="mcarbD();">-CARB</button>
+    <button onclick="proD();">+PROTEIN</button>
+    <button onclick="mproD();">-PROTEIN</button>
+    <br/>
+    <br/>
+    <button onclick="reset();">RESET</button>
+    <div id="reset"></div>
+  </body>
+</html>
