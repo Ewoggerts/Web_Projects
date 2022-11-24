@@ -1,0 +1,24 @@
+table
+{
+  border:thick solid grey;
+  border-collapse:collapse;
+  width:25%;
+}
+th,td
+{
+  border:thick solid black;
+  padding:8x;
+  width:50%;
+}
+#tablecontainer
+{
+  width: 65%;
+  position: relative;
+}
+#datatable
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: blueviolet;
+}
