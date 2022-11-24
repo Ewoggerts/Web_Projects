@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Level 3 Project
+  Ethan Wong 
+  6-7 Web Dev
+  10/27/2021
+  -->
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <body>
+  <body onload = "start();">
+    <div>
+      <form id = "inputform">
+        Insert Amount of Rolls: <input name = "amtRolls" type = "text" />
+        <br/>
+        Insert Amount of Dice Per Roll (Dice Per Roll (1-3)): <input name = "amtDice" type = "text" />
+        <br/>
+      </form>
+      <div id="message"></div>
+      <button onclick="recordData();">Confirm</button>
+      <br/>
+      <button onclick="runner();">Running Sequence</button>
+      <br/>
+      <button onclick="start();">Reset</button>
+      <br/>
+    <div/>
+    <div>
+      Doubles:
+      <div id="doubles"></div>
+      Triples:
+      <div id="triples"></div>
+      Mean:
+      <div id="mean"></div>
+      Median:
+      <div id="median"></div>
+      Mode:
+      <div id="mode"></div>
+    <div>
+    <div id="tablecontainer">
+        <table id = "dicetable">
+          <tr>
+            <th>Roll</th>
+            <th>Result</th>
+          </tr>
+        </table> 
+      <table id = "datatable">
+        <tr>
+          <th>Run</th>
+          <th>Doubles</th>
+          <th>Triples</th>
+          <th>Mean</th>
+          <th>Median</th>
+          <th>Mode</th>
+        </tr>
+      </table> 
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
