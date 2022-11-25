@@ -1,0 +1,84 @@
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+h2{
+  text-align: center;
+}
+table
+{
+  border:thick solid grey;
+  border-collapse:collapse;
+  width:25%;
+}
+th,td
+{
+  font-family:cursive;
+  border:thick solid green;
+  padding:8x;
+  width:50%;
+
+  background: rgba(244, 244, 244, 0.75);
+}
+#tablecontainer
+{
+  position: relative;
+  
+}
+#datatable
+{
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  display: block;
+  height: 500px;
+  width:1000px;
+  overflow-y: scroll;
+}
+
+#datatable2
+{
+  height: auto;
+  width:auto;
+	color: black;
+}
+
+.plansInfo
+{
+  font-family:Verdana;
+  font-weight: bold;
+  background: rgba(244, 244, 244, 0.5);
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 50%;
+  padding: 5px;
+}
+
+#analysisTable {
+  width:auto;
+  height:auto;
+}
+
+body{
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h3{
+  text-align: center;
+  font-size:21px;
+}
+
+h4{
+  text-align: center;
+  font-size:21px;
+}
