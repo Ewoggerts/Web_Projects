@@ -1,0 +1,50 @@
+
+.board 
+{
+  background: black;
+  text-align: center;
+  padding: 110px 0;
+}
+#grid 
+{
+  display: grid; 
+ grid-template-columns: 140px 140px 140px;
+ grid-template-rows: 140px 140px 140px;
+}
+.cell 
+{
+  
+  border: 20px solid black;
+  background-color: blue;
+  padding: 30px 30px;
+  font-size: 32px;
+  cursor: pointer;
+  text-align: center;
+}
+.cell:hover{
+  border:20px solid green;
+}
+
+h1
+{
+  text-align: center;
+  text-decoration: underline;
+  font-family: fantasy;
+}
+
+#warnNoSymbol
+{
+  color:rgba(154, 80, 223, 0.781);
+}
+
+p + div
+{
+  color:blue;
+  text-align: center;
+}
+
+#winMSG
+{
+  color:red;
+  font-size: 32px;
+}
