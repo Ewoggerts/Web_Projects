@@ -1,0 +1,134 @@
+<!--
+   Level 6 Lesson 2
+    Tony Liu and Ethan Wong
+    6-7 Web Development
+    12/9/2021
+    Level 6 Project Disjunction Wireless
+First- Make an form to accept input from user
+	Must include:
+	- Phone Number
+	- Data Usage in megabytes
+Next - Make a data table advertising prices
+	Must Include:
+	- The 3 avaliable data plans 
+Lastly - Using inputed values make a data table showing the analysis 
+	Must Include:
+	- How many customers on which plan
+	- Best plan for the current customer
+	- Worst plan for the current customer
+	- The amount of customers on the wrong plan
+	- The amount of customers on the best plan for them
+	- The average overpayment based on the 3 avaliable plans and data usage of each customer
+Have a line at the end suggesting the plan that the customer should buy and why.
+
+
+https://www.desmos.com/calculator/hvgo4k6suu -- desmos of the graphs of each plan
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Level 6 Project Disjunction Wireless Tony Liu and Ethan Wong</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="start();" >
+ <div class = "header">
+	 <h1> Disjunction Wireless</h1>
+ </div>
+ <br />
+  
+  <div class = "plansInfo"> 
+    There are 3 phone plans:
+		<br/>
+		1) Basic - $19.99 base price. Customers receive 1GB (1000 megabytes) of data and are charged 10 cents for each MB they use over the 1000. 
+		<br /> <br />
+		2) Comprehensive - $24.99 base price. Customers receive 4GB of data (4000 megabytes) and are charged 25 cents for each MB they use over the 4000.
+		<br /> <br />
+		3) Sucker - $4.99 base price. Customers pay 2 cents per megabyte.
+    <br /> <br />
+    4) Unlimited -  $49.99 base price. Customers would not be charged for usage.
+    <br /> <br />
+</div>
+<hr />
+
+<div class = "row">
+<div class = "col">
+  <h2>Plans</h2>
+ <table id = "analysisTable">
+  <tr>
+    <th>Number of customers using plan 1</th>
+    <td id ="plan1Num">plan1Num</td>
+  </tr>
+  <tr>
+    <th>Number of customers using plan 2</th>
+    <td id ="plan2Num">plan2Num</td>
+  </tr>
+  <tr>
+    <th>Number of customers using plan 3</th>
+    <td id ="plan3Num">plan3Num</td>
+  </tr>
+  <tr>
+    <th>Number of customers using plan 4</th>
+    <td id ="plan4Num">plan4Num</td>
+  </tr>
+  <tr>
+    <th>Total Customers</th>
+    <td id = "totalCustomers">totalCustomers</td>
+ </table>
+</div>
+
+ <div class = "col">
+   <h3>Analysis Data</h3>
+	<div id="tablecontainer2">
+		<table id = "datatable2">
+			<thead> 
+			<tr>
+					<th>Percentage on Best Plan</th>
+              
+					<th>Percentage on Worst Plan</th>
+    
+					<th>Average Overpayment</th>
+
+					<th>Best Plan for Company</th>
+
+					<th>Worst Plan for Company</th>
+
+          <th>Better Use Unlimited Plan Percentage</th> 
+			</tr>
+      <tr>
+              <th id ="percentBestPlan">percentBestPlan</th>
+              <th id ="percentWorstPlan">percentWorstPlan</th>
+              <th id ="avgOverPayment">avgOverPayment</th>
+							<th id ="BestPlanForCompany">BestPlanForCompany</th>
+							<th id ="WorstPlanForCompany">WorstPlanForCompany</th>
+							<th id ="unlimitedReplacementPercentage">unlimitedReplacementPercentage</th>
+     </tr>
+		</table>
+		<br/>
+	</div>
+ </div>
+</div>
+
+
+
+	<div id="tablecontainer">
+		<h4> Customer Data <h4/>
+		<table id = "datatable">
+			<thead> 
+			<tr>
+					<th>Customer ID</th>
+					<th>Phone Number</th>
+					<th>Phone Plan</th>
+					<th>Data Usage (MB)</th>
+          <th>Cost</th>
+		</table>
+		<br/>
+	<div/>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
