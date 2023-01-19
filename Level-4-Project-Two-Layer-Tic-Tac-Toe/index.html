@@ -1,0 +1,56 @@
+<!--
+Tony Liu and Ethan Wong
+Level 4 Project Two Layer Tic-Tac-Toe
+Web Development Periods 5-6 Even
+11/15/2021
+
+Reflection: Most of the time things went well, but we had some difficulties. We mostly had problems organizing the information. The function to check if someone won took the most time because we used arrays corresponding to each box, so it took some time to figure out how to check each box efficiently. Also,there was a problem where the bot would continue playing after the user has won, so we had to add a if(win) to the bot function. Other than these two setbacks, everything else went pretty well.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body onload = "start()">
+    <h1>Two Layer Tic-Tac-Toe</h1>
+    <p> 
+      <div>Welcome to Two Layer Tic-Tac-Toe!</div>
+      
+      Two Layer Tic-Tac-toe is mechanically the same as normal tic-tac-toe, however there are some new rules.
+      <ul>
+       <li>players can take spaces away from one another. A space can only be locked if you take it twice.</li>
+       <li>If there is a letter on the space, whether once or twice, the space is considered held by that player. A player can win the game with connected single-layer captures.</li>
+       <li>A player may not move on the same space his or her opponent took on the previous turn.</li>
+      </ul>
+      
+      Hopefully the rules were simple, enjoy the game!
+      <hr />
+    </p>
+    <p id = "displayPicked">Pick your symbol (x goes first): </p>
+    <button id = "pickX" onclick = "playerPick(1)">X</button>
+    <button id = "pickO" onclick = "playerPick(2)">O</button>
+    <div id = "warnNoSymbol"></div>
+    <div id="winMSG"></div>
+    <br />
+    <div id="grid">
+          <button id = "c1" class="cell" onclick="XO(1);winScreen()"> c1</button>
+          <button id = "c2"  class="cell" onclick="XO(2);winScreen()"> c2</button>
+          <button id = "c3"  class="cell" onclick="XO(3);winScreen()"> c3</button>
+
+          <button id = "c4"  class="cell" onclick="XO(4);winScreen()"> c4</button>
+          <button id = "c5"  class="cell" onclick="XO(5);winScreen()"> c5</button>
+          <button id = "c6"  class="cell" onclick="XO(6);winScreen()"> c6</button>
+          
+          <button id = "c7"  class="cell" onclick="XO(7);winScreen()"> c7</button>
+          <button id = "c8"  class="cell" onclick="XO(8);winScreen()"> c8</button>
+          <button id = "c9"  class="cell" onclick="XO(9);winScreen()"> c9</button>
+    </div>
+    <br />
+    <button id ="reset" onclick= "reset()">RESET</button>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
